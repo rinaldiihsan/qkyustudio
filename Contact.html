@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qkyu-Studio</title>
+    <link rel="stylesheet" href="./dist/css/output.css" />
+
+    <link rel="stylesheet" href="./dist/css/style.css" />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- font family 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+    <link rel="icon" href="dist/assets/kyu_std.png" type="image/png" />
+  </head>
+  <body class="font-poppins bg-stone-200">
+    <!-- navbar -->
+    <nav class="navbar bg-mySmoke drop-shadow-lg pb-1">
+      <div class="container mx-auto py-3 flex items-center justify-between">
+        <a href="index.html" class="flex items-center logo">
+          <img src="dist/assets/q kuning putih.png" alt="" class="w-8" />
+          <span class="ml-2 text-white text-lg font-bold">KyuStudio</span>
+        </a>
+        <button type="button" class="text-white hamburger-btn md:hidden">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        <ul class="nav-menu-mobile hidden md:flex md:space-x-4">
+          <li class=""><a href="index.html" class="text-white mt-2">Dashboard</a></li>
+          <li class=""><a href="Product.html" class="text-white">Product</a></li>
+          <li class=""><a href="Contact.html" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- Sidebar untuk tampilan mobile -->
+    <div class="sidebar tablet:hidden">
+      <ul>
+        <li><a href="index.html" class="text-white">Dashboard</a></li>
+        <li class=""><a href="Product.html" class="text-myBlack">Product</a></li>
+        <li><a href="Contact.html" class="text-white">Contact</a></li>
+      </ul>
+    </div>
+    <!-- akhir sidebar -->
+
+    <!-- kontak -->
+    <section class="contact section mt-24 mb-24" id="contact">
+      <span class="section__subtitle flex justify-center items-center mb-8 font-bold text-xl">Kontak Kami</span>
+
+      <div class="contact__container contact grid">
+        <div class="contact__content">
+          <div class="contact__info">
+            <div class="contact__card">
+              <h3 class="contact__card-title">Email</h3>
+              <span class="contact__card-data">QKyu-Studio</span>
+
+              <a href="mailto:QKyu-Studio" class="contact__button"> Hubungi Kami</a>
+            </div>
+
+            <div class="contact__card">
+              <h3 class="contact__card-title">Whatsapp</h3>
+              <span class="contact__card-data">+62 812-3344-5566</span>
+
+              <a href="https://api.whatsapp.com/send?phone=6281233445566&text=Hi, Qkyu-Studio" class="contact__button"> Hubungi Kami</a>
+            </div>
+
+            <div class="contact__card">
+              <h3 class="contact__card-title">Instagram</h3>
+              <span class="contact__card-data">rinaldiihsann</span>
+
+              <a href="#" class="contact__button"> Hubungi Kami </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="contact__content">
+          <form class="contact__form">
+            <div class="contact__form-div">
+              <label class="contact__form-tag">Name</label>
+              <input type="text" name="name" class="contact__form-input" placeholder="Masukkan nama mu" />
+            </div>
+
+            <div class="contact__form-div">
+              <label class="contact__form-tag">Email</label>
+              <input type="email" name="email" class="contact__form-input" placeholder="Masukkan email mu" />
+            </div>
+
+            <div class="contact__form-div contact__form-area">
+              <label class="contact__form-tag">Order</label>
+              <textarea name="project" class="contact__form-input" cols="30" rows="10" placeholder="Masukkan orderan mu"></textarea>
+            </div>
+
+            <button class="bg-mySmoke p-3 flex text-white rounded-lg hover:bg-myBlack transition-colors">Kirim Pesan</button>
+          </form>
+        </div> -->
+      </div>
+    </section>
+    <!-- akhir kontak -->
+
+    <!-- Footer -->
+    <footer class="bg-mySmoke text-white text-center py-4">
+      <p>&copy; 2023 QKyu-Studio. All rights reserved.</p>
+    </footer>
+
+    <!-- akhir konten -->
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="/dist/js/index.js"></script>
+  </body>
+</html>

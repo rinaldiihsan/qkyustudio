@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qkyu-Studio</title>
+    <link rel="stylesheet" href="./dist/css/output.css" />
+
+    <link rel="stylesheet" href="./dist/css/style.css" />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- font family 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+    <link rel="icon" href="dist/assets/kyu_std.png" type="image/png" />
+  </head>
+  <body class="font-poppins bg-stone-200">
+    <!-- navbar -->
+    <nav class="navbar bg-mySmoke drop-shadow-lg pb-1">
+      <div class="container mx-auto py-3 flex items-center justify-between">
+        <a href="index.html" class="flex items-center logo">
+          <img src="dist/assets/q kuning putih.png" alt="" class="w-8" />
+          <span class="ml-2 text-white text-lg font-bold">KyuStudio</span>
+        </a>
+        <button type="button" class="text-white hamburger-btn md:hidden">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        <ul class="nav-menu-mobile hidden md:flex md:space-x-4">
+          <li class=""><a href="index.html" class="text-white mt-2">Dashboard</a></li>
+          <li class=""><a href="Product.html" class="text-white">Product</a></li>
+          <li class=""><a href="Contact.html" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- Sidebar untuk tampilan mobile -->
+    <div class="sidebar tablet:hidden">
+      <ul>
+        <li><a href="#" class="text-white">Dashboard</a></li>
+        <li class=""><a href="Product.html" class="text-myBlack">Product</a></li>
+        <li><a href="Contact.html" class="text-white">Contact</a></li>
+      </ul>
+    </div>
+    <!-- akhir sidebar -->
+
+    <!-- konten -->
+    <header class="pt-20 tablet:pt-32 text-myBlack">
+      <div class="container handphone:ml-7 tablet:ml-20 pb-3">
+        <h1 class="text-4xl font-bold mb-4 leading-relaxed">Selamat Datang di</h1>
+
+        <div class="flex items-center mb-2">
+          <img src="dist/assets/q.png" class="w-11" alt="Logo" />
+          <h1 class="text-4xl font-bold ml-2">Kyu-Studio</h1>
+        </div>
+
+        <p class="text-xl mt-9">Temukan kebutuhan Desain-mu disini.</p>
+        <br />
+        <button class="bg-mySmoke text-white px-4 py-2 rounded-md hover:bg-myYellow hover:text-myBlack transition-all font-medium"><a href="Product.html">Product Kami</a></button>
+      </div>
+    </header>
+
+    <!-- Tentang Kami -->
+    <section id="about-us" class="py-16 text-myBlack">
+      <div class="container mx-auto">
+        <h2 class="text-center mb-10 text-2xl font-bold">Tentang Kami</h2>
+        <div class="flex flex-col tablet:flex-row-reverse items-center tablet:mx-28">
+          <img src="dist/assets/kyu_std.png" alt="Tentang Kami Image" class="w-72 mb-4 tablet:mx-10" />
+          <div class="tablet:ml-16">
+            <h1 class="font-bold text-xl mb-4 tablet:mb-8">QKyu-Studio</h1>
+            <p class="text-justify">
+              Qkyu Studio ialah Jasa Desain Grafis yang bisa mencetak berbagai keperluan kegiatan, seperti: Acara Formal/non-Formal, kegiatan kampus, dan lain-lain. Dan keperluan yang kami sediakan berupa Desain Digital / non Digital,
+              Spanduk atau Baleho, banner, Papan Bunga Digital, Cetak Kartu, PIN / Gantungan Kunci dan lain lain.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-mySmoke text-white text-center py-4">
+      <p>&copy; 2023 QKyu-Studio. All rights reserved.</p>
+    </footer>
+
+    <!-- akhir konten -->
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="/dist/js/index.js"></script>
+  </body>
+</html>

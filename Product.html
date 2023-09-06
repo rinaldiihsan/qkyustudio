@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qkyu-Studio - Product</title>
+    <link rel="stylesheet" href="./dist/css/output.css" />
+
+    <link rel="stylesheet" href="./dist/css/style.css" />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- font family 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+    <link rel="icon" href="dist/assets/kyu_std.png" type="image/png" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+  </head>
+  <body class="font-poppins bg-stone-200">
+    <!-- navbar -->
+    <nav class="navbar bg-mySmoke drop-shadow-lg pb-1">
+      <div class="container mx-auto py-3 flex items-center justify-between">
+        <a href="index.html" class="flex items-center logo">
+          <img src="dist/assets/q.png" alt="" class="w-8" />
+          <span class="ml-2 text-white text-lg font-bold">KyuStudio</span>
+        </a>
+        <button type="button" class="text-white hamburger-btn md:hidden">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        <ul class="nav-menu-mobile hidden md:flex md:space-x-4">
+          <li class=""><a href="index.html" class="text-white mt-2">Dashboard</a></li>
+          <li class=""><a href="Product.html" class="text-white">Product</a></li>
+          <li class=""><a href="Contact.html" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- Sidebar untuk tampilan mobile -->
+    <div class="sidebar tablet:hidden">
+      <ul>
+        <li><a href="index.html" class="text-white">Dashboard</a></li>
+        <li class=""><a href="Product.html" class="text-myBlack">Product</a></li>
+        <li><a href="Contact.html" class="text-white">Contact</a></li>
+      </ul>
+    </div>
+    <!-- akhir sidebar -->
+
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+      <!-- Carousel wrapper -->
+      <div class="relative carouselWrapper overflow-hidden rounded-lg">
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="dist/assets/slide 1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="dist/assets/slide 2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="dist/assets/slide 3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="dist/assets/slide 4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        </div>
+      </div>
+      <!-- Slider indicators -->
+      <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+      </div>
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+        >
+          <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+        >
+          <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
+    </div>
+
+    <!-- kontent -->
+    <div class="container mx-auto my-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="bg-white p-5 rounded-lg shadow-md">
+          <img src="/dist/assets/Feed-ig_01.gif" alt="Product" class="w-full h-48 rounded-md mb-4" />
+          <h3 class="text-lg font-semibold">Product</h3>
+          <p class="text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, laborum?s</p>
+          <div class="mt-4 flex justify-between items-center">
+            <span class="text-gray-700">Harga</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <img src="dist/assets/Feed-ig_02.gif" alt="Product" class="w-full h-48 rounded-md mb-4" />
+          <h3 class="text-lg font-semibold">Product</h3>
+          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, eos..</p>
+          <div class="mt-4 flex justify-between items-center">
+            <span class="text-gray-700">Harga</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <img src="dist/assets/Feed-ig_03.jpg" alt="Product" class="w-full h-48 rounded-md mb-4" />
+          <h3 class="text-lg font-semibold">Product</h3>
+          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, eos..</p>
+          <div class="mt-4 flex justify-between items-center">
+            <span class="text-gray-700">Harga</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <img src="dist/assets/Feed-ig_04.gif" alt="Product" class="w-full h-48 rounded-md mb-4" />
+          <h3 class="text-lg font-semibold">Product</h3>
+          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, eos..</p>
+          <div class="mt-4 flex justify-between items-center">
+            <span class="text-gray-700">Harga</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-lg shadow-md">
+          <img src="dist/assets/Feed-ig_05.gif" alt="Product" class="w-full h-48 rounded-md mb-4" />
+          <h3 class="text-lg font-semibold">Product</h3>
+          <p class="text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, laborum?s</p>
+          <div class="mt-4 flex justify-between items-center">
+            <span class="text-gray-700">Harga</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-lg shadow-md">
+          <img src="dist/assets/Feed-ig_06.gif" alt="Product" class="w-full h-48 rounded-md mb-4" />
+          <h3 class="text-lg font-semibold">Product</h3>
+          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, eos..</p>
+          <div class="mt-4 flex justify-between items-center">
+            <span class="text-gray-700">Harga</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-lg shadow-md">
+          <img src="dist/assets/" alt="Product" class="w-full h-48 rounded-md mb-4" />
+          <h3 class="text-lg font-semibold">Product</h3>
+          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, eos..</p>
+          <div class="mt-4 flex justify-between items-center">
+            <span class="text-gray-700">Harga</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-lg shadow-md">
+          <img src="dist/assets/" alt="Product" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-lg font-semibold">Product</h3>
+          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, eos..</p>
+          <div class="mt-4 flex justify-between items-center">
+            <span class="text-gray-700">Harga</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir konten -->
+
+    <!-- Footer -->
+    <footer class="bg-mySmoke text-white text-center py-4">
+      <p>&copy; 2023 QKyu-Studio. All rights reserved.</p>
+    </footer>
+
+    <!-- akhir konten -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+    <script src="/dist/js/index.js"></script>
+  </body>
+</html>
