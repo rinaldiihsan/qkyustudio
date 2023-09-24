@@ -24,5 +24,3 @@ function scrollToTop() {
     behavior: 'smooth',
   });
 }
-
-feather.replace();
