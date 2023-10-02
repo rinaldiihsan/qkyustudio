@@ -2780,14 +2780,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:mt-\[3rem\] {
-    margin-top: 3rem;
-  }
-
-  .md\:mt-\[2\.5rem\] {
-    margin-top: 2.5rem;
-  }
-
   .md\:mt-\[2\.2rem\] {
     margin-top: 2.2rem;
   }
